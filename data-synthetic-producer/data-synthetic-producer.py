@@ -267,7 +267,7 @@ class DatasetGeneratorFaker:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M")
         
         # Dataset 1: Ventas
-        ventas = self.generar_dataset_ventas(1000000)
+        ventas = self.generar_dataset_ventas(100000)
         df_ventas = self.guardar_csv(ventas, f"ventas_ecommerce_{timestamp}")
         if df_ventas is not None:
             datasets_info.append({
@@ -280,7 +280,7 @@ class DatasetGeneratorFaker:
         print()
         
         # Dataset 2: Empleados
-        empleados = self.generar_dataset_empleados(1000000)
+        empleados = self.generar_dataset_empleados(100000)
         df_empleados = self.guardar_csv(empleados, f"empleados_rrhh_{timestamp}")
         if df_empleados is not None:
             datasets_info.append({
@@ -293,7 +293,7 @@ class DatasetGeneratorFaker:
         print()
         
         # Dataset 3: Marketing
-        marketing = self.generar_dataset_marketing(1000000)
+        marketing = self.generar_dataset_marketing(100000)
         df_marketing = self.guardar_csv(marketing, f"campañas_marketing_{timestamp}")
         if df_marketing is not None:
             datasets_info.append({
