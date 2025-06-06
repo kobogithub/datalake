@@ -1,0 +1,5 @@
+openai
+pandas
+faker
+pyarrow
+duckdb
